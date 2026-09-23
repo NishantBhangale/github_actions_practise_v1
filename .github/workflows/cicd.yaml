@@ -23,4 +23,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: deploy the code
-        run: echo "deploy the code"
+        run: echo "deploy the code."
