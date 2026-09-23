@@ -1,0 +1,26 @@
+name: CICD
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  code:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Clone tbe code
+        run: echo "clonning the code"
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build the code
+        run: echo "building the code"
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Test the code
+        run: echo "testing the code"
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: deploy the code
+        run: echo "deploy the code"
