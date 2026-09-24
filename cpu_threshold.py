@@ -6,7 +6,7 @@ def cpu_threshold():
     cpu_current=int(psutil.cpu_percent(interval=1))
     print("current cpu usage is ",cpu_current)
     if cpu_current>cpu_thred:
-        print("CPU usage is above the threshold, email sent to admin")
+        print("CPU usage is above the threshold, email sent to admin team")
     else:        
         print("CPU usage is below the threshold")
 
