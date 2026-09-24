@@ -1,0 +1,20 @@
+name: python linter
+
+on:
+  push:
+    paths: 
+      - "*.py"
+
+jobs:
+  code-linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v7
+
+      - name: setup linter ruff
+        run: pip install ruff
+
+      - name: check the code
+        run: ruff check .
+        
