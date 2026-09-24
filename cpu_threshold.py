@@ -8,6 +8,6 @@ def cpu_threshold():
     if cpu_current>cpu_thred:
         print("CPU usage is above the threshold, email sent to admin team")
     else:        
-        print("CPU usage is below the threshold")
+        print("CPU usage is below the threshold.")
 
 cpu_threshold()
