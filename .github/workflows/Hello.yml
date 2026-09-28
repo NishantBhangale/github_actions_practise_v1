@@ -14,3 +14,18 @@ jobs:
 
       - name: Print Hello
         run: echo "Hello from GitHub Actions!"
+
+      - name: Print Date
+        run: echo "Current date and time is $(date +'%Y-%m-%d %H:%M')"
+
+      - name: Print Triggering Branch
+        run: |
+          echo "This workflow was triggered by the branch: ${{ github.ref_name }}"
+
+      - name: List files in the repository
+        run: |
+          echo "=== Simple file list === $(ls -la)"
+
+      - name: Print runner's operating system
+        run: |
+          echo "=== Runner's operating system === ${{ runner.os }}"
