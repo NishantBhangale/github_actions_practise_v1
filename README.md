@@ -4,4 +4,4 @@ Workflow
    |  
   Steps
    |
-Actions
+Actions.
