@@ -24,7 +24,7 @@ jobs:
 
       - name: List files in the repository
         run: |
-          echo "=== Simple file list === $(ls -la)"
+          echo "=== Simple file list === $(ls -la"
 
       - name: Print runner's operating system
         run: |
